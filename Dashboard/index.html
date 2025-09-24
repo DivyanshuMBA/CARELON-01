@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carelon AI Trust Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="header-title">
+                    <h1>Carelon AI Trust Dashboard</h1>
+                    <p>US Healthcare Implementation</p>
+                </div>
+                <div class="header-info">
+                    <div class="timestamp" id="currentTime"></div>
+                    <div class="system-status">
+                        <span class="status-indicator status-good"></span>
+                        <span>System Operational</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Key Metrics Section -->
+        <section class="metrics-section">
+            <div class="metrics-grid" id="metricsGrid">
+                <!-- Metrics will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Transparency Dashboard Section -->
+        <section class="transparency-section">
+            <div class="transparency-card">
+                <h2>The Transparency Dashboard</h2>
+                <div class="transparency-features">
+                    <div class="feature-item" data-feature="trust-scores">
+                        <div class="feature-icon">📊</div>
+                        <div class="feature-content">
+                            <h3>Real-time Trust & Bias Scores</h3>
+                            <p>Live monitoring of AI fairness metrics</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-feature="explainability">
+                        <div class="feature-icon">🔍</div>
+                        <div class="feature-content">
+                            <h3>AI Decision Explainability</h3>
+                            <p>Clear explanations for all AI recommendations</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-feature="compliance">
+                        <div class="feature-icon">✅</div>
+                        <div class="feature-content">
+                            <h3>Compliance & Audit Trail Access</h3>
+                            <p>Full transparency in decision tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Status Section -->
+        <section class="project-status-section">
+            <div class="status-header">
+                <h2>Project Implementation Status</h2>
+                <div class="filter-controls">
+                    <select id="categoryFilter" class="form-control">
+                        <option value="all">All Categories</option>
+                        <option value="Regulatory Foundation">Regulatory Foundation</option>
+                        <option value="Market Implementation">Market Implementation</option>
+                        <option value="Engineering Development">Engineering Development</option>
+                        <option value="Validation & Deployment">Validation & Deployment</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="status-table-container">
+                <table class="status-table" id="statusTable">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>KPI</th>
+                            <th>Current</th>
+                            <th>Target</th>
+                            <th>Progress</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="statusTableBody">
+                        <!-- Table rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Milestones Section -->
+        <section class="milestones-section">
+            <h2>Key Milestones</h2>
+            <div class="milestones-timeline" id="milestonesTimeline">
+                <!-- Milestones will be populated by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for detailed views -->
+    <div class="modal hidden" id="detailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
